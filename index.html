@@ -664,7 +664,7 @@ var map = L.map('map',{maxZoom: 15}).setView([33.6451, 72.9910], 14);
                             text: 'Temperature (°C)'
                           },
                           min: 0,
-                          max: 40
+                          max: 50
                         },
                     };
     
@@ -974,13 +974,13 @@ var map = L.map('map',{maxZoom: 15}).setView([33.6451, 72.9910], 14);
             {
               id: 'ax1',
               defaultTick: { padding: 10, enabled: false },
-              customTicks: [0, 10, 20, 30, 40],
+              customTicks: [0, 10, 20, 30, 50],
               line: {
                 width: 10,
                 breaks:{},
                 color: 'smartPalette:pal1'
               },
-              scale_range: [0, 40]
+              scale_range: [0, 50]
             },
             {
               id: 'ax2',
@@ -1008,7 +1008,7 @@ var map = L.map('map',{maxZoom: 15}).setView([33.6451, 72.9910], 14);
               yAxis: 'ax1',
               palette: {
                 id: 'pal1',
-                pointValue: '{%yValue/40}',
+                pointValue: '{%yValue/50}',
                 colors: [
                   '#C3F584',
                   '#96CD39',
